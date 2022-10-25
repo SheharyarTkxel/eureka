@@ -1,0 +1,91 @@
+* {
+    font-family: Lato;
+  }
+  
+  a {
+    color: darkblue;
+  }
+  
+  .mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mapBox > button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    width: auto;
+    background-color: blue;
+    height: initial;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  
+  /*===== Steps =====*/
+  .mat-step-text-label {
+    color: #666;
+  }
+  
+  .mat-horizontal-stepper-header-container {
+    white-space: normal;
+  }
+  
+  mat-step-header {
+    height: initial;
+    box-sizing: border-box;
+  }
+  
+  .mat-horizontal-stepper-header {
+    padding: 0;
+    height: initial;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  mat-horizontal-stepper {
+    margin-top: 50px;
+    padding: 0 25px;
+  }
+  
+  .mat-horizontal-stepper-header .mat-step-icon, .mat-horizontal-stepper-header .mat-step-icon-not-touched {
+    font-size: 20px;
+    height: 40px;
+    width: 55px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin: 0;
+    border: 2px solid #666;
+    background-color: #fff;
+    color: #666;
+  }
+  
+  .mat-horizontal-stepper-header .mat-step-header-ripple {
+    display: none;
+  }
+  
+  .mat-horizontal-stepper-header .mat-step-icon {
+    border-color: green;
+    color: green;
+  }
+  
+  .mat-step-header .mat-step-label.mat-step-label-active {
+    color: green !important;
+  }
+  
+  .mat-stepper-horizontal-line {
+    border-top-width: 2px;
+    border-color: #666;
+    top: -13px;
+    margin: 0 -10px;
+    position: relative;
+  }
+  
+  

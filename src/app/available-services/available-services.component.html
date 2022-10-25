@@ -1,0 +1,18 @@
+<div *ngIf="services && services.length">
+    <div style="width: 60em" class="card">
+        <div *ngFor="let worker of services; index as i;">
+            <div class="card-item">
+                <span>{{ worker.id }}</span>
+                <span>{{ worker.name }}</span>
+                <span>{{ worker.type }}</span>
+                <div style="margin-left: auto">
+                    <input type="button" class="btn" (click)="activateService(worker.id)" value="Select Service"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div style="padding-top: 5em;">
+    <input type="button" value="close" (click)= "close()" style="margin-left: auto; display: block;"/>
+</div>

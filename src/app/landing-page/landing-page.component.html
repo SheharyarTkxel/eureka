@@ -1,0 +1,12 @@
+<div class="mapBox">
+
+    <google-map height="95vh" width="100%" [center]="center" [zoom]="zoom" (mapClick)="moveMap($event)"
+        (mapMousemove)="move($event)">
+        <map-marker *ngFor="let marker of markers" [position]="marker.position" [options]="marker.options">
+        </map-marker>
+    </google-map>
+
+    <button [disabled]="!markers.length" class="mpOvBtn" (click)="showAvailableService()" mat-icon-button>
+        Select Services
+    </button>
+</div>

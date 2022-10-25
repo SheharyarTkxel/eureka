@@ -1,0 +1,20 @@
+<mat-toolbar color="primary">
+  <span class="fill-remaining-space"></span>
+  <span class="fill-remaining-space">Request </span>
+  <span class="fill-remaining-space">
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item>
+        <mat-icon>start</mat-icon>
+        <span>Home</span>
+      </button>
+
+      <button mat-menu-item>
+        <mat-icon>exit_to_app</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </span>
+</mat-toolbar>

@@ -1,0 +1,46 @@
+.rateBox {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.rateImg > img {
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.rateInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rateInfo > * {
+  margin: 0;
+}
+
+.rateInfo > h3 {
+  font-size: 1.5rem;
+}
+
+.rateBtns {
+    display: flex;
+    gap: 10px;
+}
+.rateBtns > button {
+  color: #fff;
+  border: 0;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0 10px;
+  height: 35px;
+}
+
+.rateBtns > button.cancelBtn {
+  background-color: red;
+}
+
+.rateBtns > button.callBtn {
+  background-color: green;
+  min-width: 5rem;
+}

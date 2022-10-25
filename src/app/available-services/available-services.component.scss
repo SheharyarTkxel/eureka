@@ -1,0 +1,17 @@
+.card {
+    .card-item {
+        padding: 1em 1em;
+        margin-bottom: 10px;
+        border: 1px solid #eee;
+        border-radius: 3px;
+        display: inline-flex;
+        width: 97%;
+        align-items: center;
+        & > span {
+            padding: 1em 1em;
+            font-weight: 600;
+            font-size: 20px;
+            font-family: monospace;
+        }
+    }
+}

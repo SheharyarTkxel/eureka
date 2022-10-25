@@ -1,0 +1,37 @@
+<mat-horizontal-stepper linear id="stepper">
+
+    <!-- <ng-template matStepperIcon="done" let-index="index">
+      {{index + 10}}
+  </ng-template>
+   -->
+
+    <ng-template matStepperIcon="edit">
+        <mat-icon>insert_drive_file</mat-icon>
+    </ng-template>
+
+    <ng-template matStepperIcon="done">
+        <mat-icon>done_all</mat-icon>
+    </ng-template>
+
+    <mat-step label="Pending">
+
+    </mat-step>
+
+    <mat-step #step2 label="On way">
+        <mat-star-rating [worker]="worker"></mat-star-rating>
+    </mat-step>
+    <mat-step #step3 label="Deliveered">
+
+    </mat-step>
+    <mat-step #step4 label="Working">
+
+    </mat-step>
+    <mat-step #step5 label="Completed">
+
+    </mat-step>
+</mat-horizontal-stepper>
+<div class="mapBox">
+    <google-map height="60vh" width="100%" [center]="center" [zoom]="zoom" (mapClick)="moveMap($event)"
+        (mapMousemove)="move($event)">
+    </google-map>
+</div>

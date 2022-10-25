@@ -1,0 +1,21 @@
+<div class="rateBox">
+  <div class="rateImg">
+    <img src="https://via.placeholder.com/80" alt="author" />
+  </div>
+  <div class="rateInfo">
+    <h3>{{worker?.name}}</h3>
+    <div class="rating">
+      <button mat-icon-button [style.color]="'#FBDB65'" *ngFor="let ratingId of ratingArr; index as i"
+        [id]="'star_' + i">
+        <mat-icon>
+          {{ showIcon(i) }}
+        </mat-icon>
+      </button>
+
+    </div>
+    <div class="rateBtns">
+      <button class="cancelBtn">Cancel</button>
+      <button class="callBtn">Call</button>
+    </div>
+  </div>
+</div>
